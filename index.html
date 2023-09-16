@@ -10,22 +10,22 @@
 <body>
     <div class="main-container">
         <div class="todoapp">
-            <h3>To Do List</h3>
+            <h3>To Do List <img src="images/list-solid.svg" alt="list icon"></h3>
             <div class = "row">
                 <input type="text" id="textbox" placeholder="Type your to do list">
+                <!-- On click event listener -->
                 <button onclick=addList()>Add</button>
+            </div>
+            <div class="taskCount">
+                <h5>Total Task:<span id="total">0</span></h5>
+                <h5>Task Completed:<span id="completed">0</span></h5>
+                <h5>Task Remaining:<span id="remaining">0</span></h5>
             </div>
             <ul id="list-container">
                 <!-- <li class="checked">Task1</li>
                 <li>Task2</li>
                 <li>Task3</li> -->
             </ul>
-
-            <div class="taskCount">
-                <h5>Total Task:<span id="total">0</span></h5>
-                <h5>Task Completed:<span id="completed">0</span></h5>
-                <h5>Task Remaining:<span id="remaining">0</span></h5>
-            </div>
         </div>
     </div>
 <script src="script.js"></script>
